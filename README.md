@@ -1,6 +1,10 @@
 # grnsnake
 Snake with a single variable
 
+- [how](#how)
+- [code](#code)
+- [readable code](#readable-code)
+
 # how
 i used offsets into a 1024kb memory area as variables using macros, then i substituted macro calls. check `readable.c`.
 could use less offsets if we made everything live in the SDL_Event's padding.
@@ -309,7 +313,7 @@ int main(void) {
 ```
 
 # readable code
-```
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <SDL3/SDL.h>
