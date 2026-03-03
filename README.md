@@ -6,8 +6,8 @@ Snake with a single variable
 - [readable code](#readable-code)
 
 # how
-i used offsets into a 1024kb memory area as variables using macros, then i substituted macro calls. check `readable.c`.
-could use less offsets if we made everything live in the SDL_Event's padding.
+i started using variables, then converted each one into offsets into a 1024kb memory area as variables using macros, then i inlined some, 
+then i substituted macro calls. check [readable code](#readable-code) for the pre-substitution code. could use less offsets if we made everything live in the SDL_Event's padding.
 
 # code
 ```c
